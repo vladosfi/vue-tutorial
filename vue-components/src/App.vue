@@ -1,6 +1,8 @@
 <template>
-  <div></div>
-  <Greed />
+  <Greed name="VGI 1" heroName="Batman"/>
+  <Greed name="VGI 2" heroName="VatMan"/>
+  <Greed name="VGI 3" heroName="PacMan"/>
+  <Greed :name="name" :heroName="channel"/>
 </template>
 
 <script>
@@ -10,6 +12,12 @@ export default {
   name: 'App',
   components: {
     Greed
+  },
+  data() {
+    return {
+      name: 'Vladimir',
+      channel: 'Hero Devision'
+    }
   }
 }
 </script>
