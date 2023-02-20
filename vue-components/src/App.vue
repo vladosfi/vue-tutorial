@@ -1,31 +1,32 @@
 <template>
-  <Greed name="VGI 1" heroName="Batman"/>
-  <Greed name="VGI 2" heroName="VatMan"/>
-  <Greed name="VGI 3" heroName="PacMan"/>
-  <Greed :name="name" :heroName="channel"/>
+  <div>
+    <Greed name="VGI 1" heroName="Batman" />
+    <Greed name="VGI 2" heroName="VatMan" />
+    <Greed name="VGI 3" heroName="PacMan" />
+    <Greed :name="name" :heroName="channel" />
 
-  <ArticleComponent title="Art Title None default" :likes="25" :isPublished="isPublished"/> 
-  
+    <ArticleComponent id="my-article" title="Art Title None default" :likes="25" :isPublished="isPublished" />
+  </div>
 </template>
 
 <script>
-import Greed from './components/Greed.vue'
-import ArticleComponent from './components/ArticleComponent.vue'
+import Greed from "./components/Greed.vue";
+import ArticleComponent from "./components/ArticleComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Greed,
     ArticleComponent,
   },
   data() {
     return {
-      name: 'Vladimir',
-      channel: 'Hero Devision',
+      name: "Vladimir",
+      channel: "Hero Devision",
       isPublished: true,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style>
