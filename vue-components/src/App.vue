@@ -3,20 +3,26 @@
   <Greed name="VGI 2" heroName="VatMan"/>
   <Greed name="VGI 3" heroName="PacMan"/>
   <Greed :name="name" :heroName="channel"/>
+
+  <ArticleComponent title="Art Title None default" :likes="25" :isPublished="isPublished"/> 
+  
 </template>
 
 <script>
 import Greed from './components/Greed.vue'
+import ArticleComponent from './components/ArticleComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    Greed
+    Greed,
+    ArticleComponent,
   },
   data() {
     return {
       name: 'Vladimir',
-      channel: 'Hero Devision'
+      channel: 'Hero Devision',
+      isPublished: true,
     }
   }
 }
