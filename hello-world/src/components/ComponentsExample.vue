@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'ListRendering',
+  name: 'ComponentsExample',
   components: {},
   data() {
     return {
