@@ -10,6 +10,11 @@
     //Provide and Inject
     <h3>App component username {{ uname }}</h3>
     <ComponentC />
+
+    //Popup Example
+    <button @click="showPopup = true">Show Popup</button>
+    <PopupExample v-show="showPopup" @close="closePopup"/>
+
   </div>
 </template>
 
@@ -17,6 +22,7 @@
 import Greed from "./components/Greed.vue";
 import ArticleComponent from "./components/ArticleComponent.vue";
 import ComponentC from "./components/ComponentC.vue";
+import PopupExample from "./components/PopupExample.vue";
 
 export default {
   name: "App",
@@ -24,6 +30,7 @@ export default {
     Greed,
     ArticleComponent,
     ComponentC,
+    PopupExample,
   },
   data() {
     return {
@@ -31,11 +38,18 @@ export default {
       channel: "Hero Devision",
       isPublished: true,
       uname: "VLADIMIR",
+      showPopup: false,
     };
   },
   provide() {
     return { username: this.uname };
   },
+  methods: {
+    closePopup(name) {
+      this.showPopup = false;
+      console.log(name);
+    }
+  }
 };
 </script>
 
