@@ -28,7 +28,7 @@
   </SlotsProps>
   <SlotsProps>
     <template v-slot:default="slotProps">
-      {{ slotProps.firstName }}
+      <button>{{ slotProps.firstName }}</button>
     </template>
   </SlotsProps>
 </template>
