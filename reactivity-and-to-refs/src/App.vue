@@ -1,14 +1,16 @@
 <template>
-  <DataComposition/>
+  <DemoOne/>
+  <DemoTwo/>
 </template>
 
 <script>
-import DataComposition from './components/DataComposition.vue'
-
+import DemoOne from './components/DemoOne.vue'
+import DemoTwo from './components/DemoTwo.vue'
 export default {
   name: 'App',
   components: {
-    DataComposition,
+    DemoOne,
+    DemoTwo,
   }
 }
 </script>
