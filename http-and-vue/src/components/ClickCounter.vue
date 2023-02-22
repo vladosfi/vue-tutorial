@@ -9,11 +9,11 @@ import CounterMixin from "../mixins/counter";
 export default {
   name: "ClickCounter",
   mixins: [CounterMixin],
-  //   data() {
-  //     return {
-  //       count: 0,
-  //     };
-  //   },
+    data() {
+      return {
+        count: 42,
+      };
+    },
   //   methods: {
   //     incrementCount() {
   //       return this.count++;
