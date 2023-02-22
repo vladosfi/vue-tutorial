@@ -57,7 +57,7 @@ export default {
   },
   computed: {
     fullName() {
-      return `${this.fname} ${this.lname}`;
+      return `${this.fName} ${this.lName}`;
     },
   },
 };
