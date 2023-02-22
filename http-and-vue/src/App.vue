@@ -1,7 +1,12 @@
 <template>
+  //Mixins
+  <HoverCounter/>
+  <ClickCounter/>
+<br>
+<br>
   //TemplateRef
   <TemplateRef/>
-  
+
   <CreatePost />
   <PostList />
 </template>
@@ -10,6 +15,8 @@
 import PostList from './components/PostList.vue'
 import CreatePost from './components/CreatePost.vue'
 import TemplateRef from './components/TemplateRef.vue'
+import ClickCounter from './components/ClickCounter.vue'
+import HoverCounter from './components/HoverCounter.vue'
 
 export default {
   name: 'App',
@@ -17,6 +24,8 @@ export default {
     PostList,
     CreatePost,
     TemplateRef,
+    ClickCounter,
+    HoverCounter,
   }
 }
 </script>
