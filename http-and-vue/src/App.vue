@@ -1,7 +1,7 @@
 <template>
   
-  <PostList />
   <CreatePost />
+  <PostList />
 </template>
 
 <script>

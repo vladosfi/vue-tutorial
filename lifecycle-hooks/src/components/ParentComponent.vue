@@ -14,7 +14,7 @@ export default {
   components: {ChildComponent},
   data() {
     return {
-      showChild: true,
+      showChild: false,
     };
   },
   beforeCreate() {
