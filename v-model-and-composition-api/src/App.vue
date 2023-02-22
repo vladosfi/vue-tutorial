@@ -1,16 +1,19 @@
 <template>
-  <VModel/>
+  <ComputedProperties />
+  <VModel />
 </template>
 
 <script>
-import VModel from './components/VModel.vue'
+import VModel from "./components/VModel.vue";
+import ComputedProperties from "./components/ComputedProperties.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    VModel
-  }
-}
+    VModel,
+    ComputedProperties,
+  },
+};
 </script>
 
 <style>

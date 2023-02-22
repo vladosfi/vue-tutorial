@@ -1,10 +1,11 @@
 <template>
   <div>
-    <input type="text" placeholder="Firsret Name" v-model="fName" />
+    <h1>v-model and Composition API</h1>
+    <input type="text" placeholder="First Name" v-model="fName" />
     <input type="text" placeholder="Last Name" v-model="lName" />
 
     <br>
-    
+    <!-- Options API -->
     <input type="text" placeholder="Hero Name" v-model="heroName" />
     <input type="text" placeholder="First Name" v-model="firstName" />
     <input type="text" placeholder="Last Name" v-model="lastName" />
